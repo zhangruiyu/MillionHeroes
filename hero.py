@@ -25,11 +25,11 @@ w = im.size[0]
 h = im.size[1]
 print("xx:{}".format(img_size))
 
-region = im.crop((70, 300, w - 70, 600))  # 裁剪的区域 百万超人 手机1080*1920 高度范围300~600
+region = im.crop((70, 300, w - 70, 1600))  # 裁剪的区域 百万超人 手机1080*1920 高度范围300~600
 region.save("./crop_test1.png")
 
 im = Image.open(r"./crop_test1.png")
-text = pytesseract.image_to_string(im, lang='chi_sim')
+text = pytesseract.image_to_string(im, lang='chi_sim').replace("\n", "")
 print(text, end='\n\n')
 
 keyword = ''.join(text)  # 识别的问题文本
