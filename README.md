@@ -33,3 +33,16 @@
 
 
 
+## 改进
+1. 此为个人改进版本,请按原上面链接配置完成后,优化的内容是不用买阿里云汉王(因为之前是1分钱100次,现在涨价了),替代用的[tesseract]{https://github.com/tesseract-ocr/tesseract}
+2. 只能mac上玩 ,windows没试过 ,
+
+## 步骤
+1. brew install tesseract
+2. 步骤1执行完后把项目目录里的chi_sim.traineddata移动到/usr/local/share/tessdata
+3. 其他按照原版教程
+
+## 问题
+1. 尝试过读取答案 但是不管是tesseract还是汉王目前都读不出去来 ,可能是颜色原因,以后尝试
+
+
