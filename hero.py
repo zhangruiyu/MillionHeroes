@@ -46,7 +46,7 @@ else:
 count = 0
 for result in results:
     # print('{0} {1} {2} {3} {4}'.format(result.index, result.title, result.abstract, result.show_url, result.url))  # 此处应有格式化输出
-    print('{0}'.format(result.abstract))  # 此处应有格式化输出
+    print('{0}'.format(result.abstract), end='\n\n')  # 此处应有格式化输出
     count = count + 1
     if (count == 2):
         break
