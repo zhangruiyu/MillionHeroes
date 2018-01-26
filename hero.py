@@ -35,7 +35,7 @@ def getAnswer():
     global arrayAnswer
     print("执行获取答案")
     # 获取答案
-    regionAnswer = Image.open(r"./screenshot.png").crop((70, 600, w - 70, 1280))  # 裁剪的区域 百万超人 手机1080*1920 高度范围300~600
+    regionAnswer = Image.open(r"./screenshot.png").crop((70, 800, w - 70, 1580))  # 裁剪的区域 百万超人 手机1080*1920 高度范围300~600
     # for i in range(1,1600):
     #     for j in range(1,1600):
     #         r, g, b,d = region.getpixel((i, j))
@@ -58,7 +58,7 @@ def getBaiduData():
     global arrayAnswer
     print("执行获取问题")
     # 获取题目
-    region = Image.open(r"./screenshot.png").crop((70, 300, w - 70, 600))  # 裁剪的区域 百万超人 手机1080*1920 高度范围300~600
+    region = Image.open(r"./screenshot.png").crop((70, 300, w - 70, 800))  # 裁剪的区域 百万超人 手机1080*1920 高度范围300~600
 
     # 保存im
     region.save("./crop_test1.png")
